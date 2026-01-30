@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# EduGrade Pro: Intelligent Academic Analytics
 
-# Run and deploy your AI Studio app
+A sophisticated management system engineered for academic performance tracking and pedagogical data analysis. This platform bridges the gap between raw data entry and actionable educational insights through high-fidelity visualizations and generative AI.
 
-This contains everything you need to run your app locally.
+## Core Capabilities
 
-View your app in AI Studio: https://ai.studio/apps/drive/1CCfNZZg8_54EOxfh3R4vq63Xb1-v_GGx
+- **Statistical Intelligence**: Real-time calculation of class averages, peak performance identification, and low-range metrics.
+- **AI Performance Diagnostics**: Deep integration with Google Gemini for generating contextual summaries and teaching recommendations based on grade distributions.
+- **Dynamic Visualizations**: Responsive charting for immediate identification of class-wide performance trends.
+- **Professional Reporting**: Structured data views optimized for academic documentation and record-keeping.
+- **Responsive Architecture**: Mobile-first design for cross-platform data management.
 
-## Run Locally
+## Technical Foundation
 
-**Prerequisites:**  Node.js
+- **Frontend Core**: React 19 with TypeScript for robust, type-safe development.
+- **Intelligence Engine**: `@google/genai` implementation utilizing the `gemini-3-flash-preview` model.
+- **UI & Styling**: Tailwind CSS utilizing the Inter font family for a clean, modern aesthetic.
+- **Data Graphics**: Recharts engine for SVG-based performance distribution mapping.
+- **Modular Design**: Atomic component structure with dedicated service layers for AI communication.
 
+## System Architecture
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- `App.tsx`: Central logic orchestrator and state management.
+- `services/geminiService.ts`: Specialized layer for AI inference and JSON schema-based response handling.
+- `components/StatsCard.tsx`: Reusable data visualization unit for key performance indicators.
+- `types.ts`: Universal interface definitions ensuring data integrity across the system.
+
+## Performance Features
+
+- **Zero-Latency State Updates**: Immediate reflection of grade changes in visual charts.
+- **Conditional Formatting**: Dynamic color-coding based on academic performance thresholds (Emerald for 90+, Amber for 60-75, etc.).
+- **Print Optimization**: Dedicated CSS considerations for physical report generation.
+
+## Requirements
+
+The intelligence features require a valid `API_KEY` provided via environment variables to interface with the Google GenAI infrastructure.
