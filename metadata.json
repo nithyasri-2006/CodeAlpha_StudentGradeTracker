@@ -1,0 +1,5 @@
+{
+  "name": " Student Grade Tracker",
+  "description": "A comprehensive student grade management system that calculates analytics (average, high, low) and provides AI-powered performance insights using Gemini.",
+  "requestFramePermissions": []
+}
